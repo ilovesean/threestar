@@ -1,19 +1,49 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background: url('https://example.com/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
+
+/* Header Styles */
 header {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 1em;
+  padding: 1em 0;
+  text-align: center;
 }
+
+.banner {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1em;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Main Content Styles */
 main {
   padding: 2em;
+  color: white;
 }
+
+/* Games Section Styles */
+#games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+iframe {
+  margin: 1em;
+  border: 2px solid #333;
+}
+
+/* Footer Styles */
 footer {
-  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-align: center;
   padding: 1em;
