@@ -1,82 +1,36 @@
-/* General Styles */
-body {
-  font-family: 'Roboto', sans-serif;
-  background: linear-gradient(to bottom right, #2c3e50, #bdc3c7);
-  margin: 0;
-  padding: 0;
-  color: #ffffff;
-}
-
-/* Header Styles */
-header {
-  background-color: rgba(44, 62, 80, 0.9);
-  padding: 1em 0;
-  text-align: center;
-}
-
-.banner {
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 1em;
-  border-radius: 10px;
-  display: inline-block;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.banner h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Main Content Styles */
-main {
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Games Section Styles */
-#games {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-}
-
-iframe {
-  border: none;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-iframe:hover {
-  transform: scale(1.05);
-}
-
-/* Footer Styles */
-footer {
-  background-color: rgba(44, 62, 80, 0.9);
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - Unblocked Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Games</h1>
+    </header>
+    <main>
+        <div id="games-list">
+            <h2>Select a game to play:</h2>
+            <ul>
+                <li><a href="#" id="game1">Game 1</a></li>
+                <li><a href="#" id="game2">Game 2</a></li>
+                <li><a href="#" id="game3">Game 3</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Unblocked Games. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
