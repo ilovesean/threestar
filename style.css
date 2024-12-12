@@ -2,65 +2,98 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    background: #f8f9fa;
     color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #343a40;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
 }
 
-header nav ul {
+header nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header nav .logo {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav .nav-links {
     list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-header nav ul li {
+header nav .nav-links li {
     display: inline;
-    margin-right: 10px;
+    margin-left: 1rem;
 }
 
-header nav ul li a {
+header nav .nav-links a {
     color: #fff;
     text-decoration: none;
 }
 
-main {
-    padding: 2rem;
+.main {
+    background: #e9ecef;
+    padding: 2rem 0;
 }
 
-footer {
-    background-color: #333;
+.hero {
+    background: linear-gradient(to right, #007bff, #6610f2);
     color: #fff;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 4rem 0;
 }
 
-#intro {
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.popular-games {
+    padding: 2rem 0;
+}
+
+.popular-games h2 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-#popular-games {
+.popular-games .game-grid {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .game-card {
     background: #fff;
-    padding: 1rem;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 1rem;
+    overflow: hidden;
 }
 
 .game-card img {
     max-width: 100%;
-    border-radius: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
