@@ -7,21 +7,18 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c1c1c;
     padding: 20px;
-    text-align: center;
     position: relative;
 }
 
-#fps-counter {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #ff0000; /* Red color */
-    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Comic Sans font */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6347;
 }
 
 nav ul {
@@ -29,7 +26,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    gap: 15px;
 }
 
 nav ul li {
@@ -42,8 +39,10 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {
-    padding: 40px 20px;
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
 }
 
 h1, h2 {
@@ -51,7 +50,7 @@ h1, h2 {
 }
 
 .game-section {
-    margin-bottom: 40px;
+    margin: 40px 0;
 }
 
 .game-list {
@@ -73,4 +72,10 @@ h1, h2 {
 
 .game:hover {
     transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1c1c1c;
 }
