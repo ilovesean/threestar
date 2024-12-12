@@ -9,31 +9,37 @@
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="games.html">Games</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="container">
+                <a href="index.html" class="logo">Unblocked Games</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        <h1>Games</h1>
     </header>
     <main>
-        <div id="game-container">
-            <div class="game-card">
-                <img src="game1-thumbnail.jpg" alt="Game 1" onclick="window.location.href='game1.html'">
-            </div>
-            <div class="game-card">
-                <img src="game2-thumbnail.jpg" alt="Game 2" onclick="window.location.href='game2.html'">
-            </div>
-            <div class="game-card">
-                <img src="game3-thumbnail.jpg" alt="Game 3" onclick="window.location.href='game3.html'">
+        <div class="container">
+            <h1>Games</h1>
+            <div class="game-grid">
+                <div class="game-card">
+                    <img src="game1-thumbnail.jpg" alt="Game 1" onclick="window.location.href='game1.html'">
+                </div>
+                <div class="game-card">
+                    <img src="game2-thumbnail.jpg" alt="Game 2" onclick="window.location.href='game2.html'">
+                </div>
+                <div class="game-card">
+                    <img src="game3-thumbnail.jpg" alt="Game 3" onclick="window.location.href='game3.html'">
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>&copy; 2024 Unblocked Games. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Unblocked Games. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
