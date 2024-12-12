@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+    color: #333;
 }
 
 header {
@@ -41,9 +42,25 @@ footer {
     bottom: 0;
 }
 
-#game-container, #games-list, #about-content, #contact-form {
-    background-color: #fff;
+#intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#popular-games {
+    display: flex;
+    justify-content: space-around;
+}
+
+.game-card {
+    background: #fff;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.game-card img {
+    max-width: 100%;
+    border-radius: 5px;
 }
