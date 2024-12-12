@@ -5,45 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultimate Gaming Hub</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* White text */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1e1e1e; /* Slightly lighter background */
+        }
+        .fps {
+            font-size: 20px;
+            color: #00ff00; /* Bright green for FPS */
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .popular-games, .all-games {
+            padding: 20px;
+        }
+        .game {
+            background: #282828; /* Game card background */
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .game:hover {
+            background: #3a3a3a; /* Hover effect */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <div class="logo">GamingHub</div>
-        <nav>
-            <ul>
-                <li><a href="#popular-games">Popular Games</a></li>
-                <li><a href="#all-games">All Games</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
+        <h1>Ultimate Gaming Hub</h1>
+        <div class="fps">FPS: <span id="fpsValue">60</span></div>
     </header>
-    <section class="hero">
-        <h1>Welcome to the Ultimate Gaming Experience</h1>
-        <p>Discover, play, and enjoy the best games!</p>
+
+    <section class="popular-games">
+        <h2>Popular Games</h2>
+        <div class="game">
+            <h3>Game 1</h3>
+            <p>Exciting description of Game 1.</p>
+            <button onclick="alert('Game 1 Launched!')">Play Now</button>
+        </div>
+        <div class="game">
+            <h3>Game 2</h3>
+            <p>Exciting description of Game 2.</p>
+            <button onclick="alert('Game 2 Launched!')">Play Now</button>
+        </div>
+        <div class="game">
+            <h3>Game 3</h3>
+            <p>Exciting description of Game 3.</p>
+            <button onclick="alert('Game 3 Launched!')">Play Now</button>
+        </div>
     </section>
-    <main>
-        <section id="popular-games" class="game-section">
-            <h2>Popular Games</h2>
-            <div class="game-list">
-                <div class="game">Game 1</div>
-                <div class="game">Game 2</div>
-                <div class="game">Game 3</div>
-            </div>
-        </section>
-        <section id="all-games" class="game-section">
-            <h2>All Games</h2>
-            <div class="game-list">
-                <div class="game">Game 4</div>
-                <div class="game">Game 5</div>
-                <div class="game">Game 6</div>
-            </div>
-        </section>
-    </main>
-    <footer id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: support@gaminghub.com</p>
+
+    <section class="all-games">
+        <h2>All Games</h2>
+        <div class="game">
+            <h3>Game 4</h3>
+            <p>Exciting description of Game 4.</p>
+            <button onclick="alert('Game 4 Launched!')">Play Now</button>
+        </div>
+        <div class="game">
+            <h3>Game 5</h3>
+            <p>Exciting description of Game 5.</p>
+            <button onclick="alert('Game 5 Launched!')">Play Now</button>
+        </div>
+        <div class="game">
+            <h3>Game 6</h3>
+            <p>Exciting description of Game 6.</p>
+            <button onclick="alert('Game 6 Launched!')">Play Now</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Ultimate Gaming Hub. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        // Simple FPS display simulation
+        let fps = 60; // Simulated FPS value
+        function updateFPS() {
+            document.getElementById('fpsValue').innerText = fps;
+            // Simulate FPS change over time
+            fps = Math.floor(Math.random() * 30) + 30; // Random FPS between 30 and 60
+            setTimeout(updateFPS, 1000);
+        }
+        updateFPS();
+    </script>
 </body>
 </html>
